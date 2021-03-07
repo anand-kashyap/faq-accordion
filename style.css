@@ -46,7 +46,6 @@ section {
   padding: 40px 30px;
   padding-left: 0;
   border-radius: 10px;
-  align-items: center;
   min-height: 400px; /* for desk image */
 }
 
@@ -73,14 +72,65 @@ img {
   position: absolute;
   width: 184px;
   left: -90px;
-  bottom: 65px;
+  top: 75px;
 }
 
 /* illustrations end */
+.hide > .answer {
+  display: none;
+}
+.hide > .question > p {
+  font-weight: normal;
+}
 
+.hide > .question img {
+  transform: none;
+}
+.icon {
+  margin-right: 15px;
+}
+.icon > img {
+  width: 10px;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px 0; */
+  cursor: pointer;
+}
+
+.question > p:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.question > p {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+}
+
+.answer {
+  padding-top: 10px;
+  margin-right: 25px;
+  color: hsl(240, 6%, 50%);
+}
+.faq-block {
+  margin: 10px 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 10px 0;
+}
 /* faq start */
 .faq {
+  padding: 0 50px;
   /* visibility: hidden; */
+}
+.faq > h1 {
+  color: hsl(238, 29%, 16%);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 /* faq end */
