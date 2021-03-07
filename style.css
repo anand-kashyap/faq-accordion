@@ -68,7 +68,7 @@ img {
   position: relative;
 }
 
-.illustration > img {
+.illustration > .img-box {
   position: absolute;
   width: 184px;
   left: -90px;
@@ -134,3 +134,50 @@ img {
 }
 
 /* faq end */
+
+.woman-mobile {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  section {
+    background-image: url('./images/bg-pattern-mobile.svg');
+    background-position: -377px -345px;
+    width: 80%;
+    padding: 10px 5px;
+    padding-left: 0;
+    flex-direction: column;
+    min-height: initial;
+  }
+  .question > p,
+  .answer {
+    font-size: 0.95rem;
+  }
+  .faq > h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .illustration > .img-box {
+    display: none;
+  }
+  .illustration {
+    background: none;
+    min-height: 100px;
+    position: relative;
+  }
+  .woman-mobile {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+  }
+  .faq {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  .icon {
+    margin-right: 5px;
+  }
+  .answer {
+    margin-right: 15px;
+  }
+}
