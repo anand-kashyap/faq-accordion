@@ -143,6 +143,7 @@ img {
     background-image: url('./images/bg-pattern-mobile.svg');
     background-position: -377px -345px;
     width: 80%;
+    margin-top: 100px;
     padding: 10px 5px;
     padding-left: 0;
     flex-direction: column;
